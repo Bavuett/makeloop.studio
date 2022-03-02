@@ -8,82 +8,65 @@
     -webkit-tap-highlight-color: transparent;
     cursor: default;
     user-select: none;
-    
-}
-body{
+    color: white;
+}    
 
-    background-size: 600% 600%;
-    background-image: linear-gradient(180deg,#FFFFFF,#858585);  
-
+html {
+    background: black;
 }
 
-.makeloop-logo {
-    width: 27%;
-    padding-top: 25%;
-    padding-bottom: 1.5%;
+h1 {
+    font-family: "IBM Plex Mono", sans-serif;
 }
 
-.landing-page{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background: transparent;
-}
-h4{
-
-    font-family: 'IBM Plex Mono', monospace;
-
-}
-.landing-page h4{
-
-    font-size: 17px;
-    font-weight: 400;
-
-}
-
-
-.landing-page span{
-
-    font-size: 95px;
-    padding-top: 13%;
-    color: #A7A7A7;
-
-
-}
-
-.curtain{
+nav {
+    position: fixed;
+    padding: 1%;
+    height: auto;
+    background: black;
     width: 100%;
-    height: 3.90625%;
-    position: fixed;
-    background-color: #F1F1F1;
-    display: flex;
-    justify-content: center;
+    display: flex; 
+    flex-direction: row;
     align-items: center;
+    justify-content: center;
 }
-.curtain div{
 
-    width: 4%;
-    height: 1.5%;
-    position: fixed;
-    background-color: #DADADA;
-    border-radius: 37px;
+header {
+    padding-top: 5%;
+    padding-left: 1%; 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
 
+svg.makeloop-logo {
+    width: 100%;
+}
 
+svg.makeloop-logo g {
+    fill: white;
 }
 
 @media screen and (max-width: 900px) {
-
-    .makeloop-logo{
-
-        padding-top: 100%;
-        width: 80%;
-        padding-bottom: 4%;
+    nav {
+        padding: 5%;
+        display: flex; 
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
     }
-    .landing-page h4{
 
-        font-size: 13px;
+    header {
+        padding-top: 20%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
 
+    svg.makeloop-logo {
+        width: 100%;
     }
-    }
+}
     
