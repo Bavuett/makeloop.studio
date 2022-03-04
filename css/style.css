@@ -16,28 +16,42 @@ html {
 }
 
 h1 {
-    font-family: "IBM Plex Mono", sans-serif;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 600;
+    font-size: 72px;
+    padding-bottom: 2%;
+}
+
+h2 {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: rgb(205, 205, 205);
 }
 
 nav {
     position: fixed;
     padding: 1%;
+    padding-left: 15%;
+    padding-right: 15%;
     height: auto;
     background: black;
     width: 100%;
     display: flex; 
     flex-direction: row;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
+    justify-content: flex-start;
+    border-bottom: solid 0.2px rgb(30, 30, 30);
 }
 
 header {
-    padding-top: 5%;
-    padding-left: 1%; 
+    padding-top: 10%;
+    padding-left: 15%; 
+    padding-right: 15%;
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
+    justify-content: flex-start;
 }
 
 svg.makeloop-logo {
@@ -49,16 +63,27 @@ svg.makeloop-logo g {
 }
 
 @media screen and (max-width: 900px) {
+    h1 {
+        font-size: 40px;
+        padding-bottom: 3%;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
     nav {
         padding: 5%;
         display: flex; 
         flex-direction: row;
-        align-items: center;
-        justify-content: center;
+        align-items: flex-start;
+        justify-content: flex-start;
     }
 
     header {
-        padding-top: 20%;
+        padding-top: 25%;
+        padding-left: 5%;
+        padding-right: 5%;
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -67,6 +92,10 @@ svg.makeloop-logo g {
 
     svg.makeloop-logo {
         width: 100%;
+    }
+
+    .title-div br {
+        display: none;
     }
 }
     
