@@ -1,3 +1,25 @@
+@keyframes color-animation-logo {
+    0% {
+        fill: white;
+    }
+
+    25% {
+        fill: lightgreen;
+    }
+
+    50% {
+        fill: lightseagreen;
+    }
+
+    75% {
+        fill: lightsalmon;
+    }
+
+    100% {
+        fill: lightcoral;
+    }
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -16,10 +38,11 @@ html {
 }
 
 h1 {
-    font-family: "IBM Plex Sans", sans-serif;
-    font-weight: 600;
-    font-size: 72px;
+    font-family: "Inter", sans-serif;
+    font-weight: 800;
+    font-size: 62px;
     padding-bottom: 2%;
+    text-transform: uppercase;
 }
 
 h2 {
@@ -31,40 +54,41 @@ h2 {
 
 nav {
     position: fixed;
-    padding: 1%;
+    padding: 2%;
+    bottom: 0;
     padding-left: 15%;
     padding-right: 15%;
-    height: auto;
     background: black;
     width: 100%;
-    display: flex; 
+    display: flex;
     flex-direction: row;
-    align-items: flex-start;
-    justify-content: flex-start;
-    border-bottom: solid 0.2px rgb(30, 30, 30);
+    align-items: center;
+    justify-content: space-between;
+    border-top: solid 0.2px rgb(30, 30, 30);
+    flex-wrap: nowrap;
 }
 
 header {
-    padding-top: 10%;
+    padding-top: 2%;
     padding-left: 15%; 
     padding-right: 15%;
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
-    justify-content: flex-start;
 }
 
 svg.makeloop-logo {
-    width: 100%;
+    width: 30%;
+    fill: white;
+    animation: color-animation-logo 35s linear 3s infinite alternate both;
 }
 
-svg.makeloop-logo g {
-    fill: white;
+svg.makeloop-logo rect.cls-1 {
+    fill: transparent;
 }
 
 @media screen and (max-width: 900px) {
     h1 {
-        font-size: 40px;
+        font-size: 35px;
         padding-bottom: 3%;
     }
 
@@ -74,16 +98,14 @@ svg.makeloop-logo g {
 
     nav {
         padding: 5%;
-        display: flex; 
-        flex-direction: row;
-        align-items: flex-start;
-        justify-content: flex-start;
+        padding-left: 7%;
+        padding-right: 7%;
     }
 
     header {
-        padding-top: 25%;
-        padding-left: 5%;
-        padding-right: 5%;
+        padding-top: 10%;
+        padding-left: 7%;
+        padding-right: 7%;
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -91,7 +113,7 @@ svg.makeloop-logo g {
     }
 
     svg.makeloop-logo {
-        width: 70%;
+        width: 20%;
     }
 
     .title-div br {
