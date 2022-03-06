@@ -66,14 +66,42 @@ nav {
     bottom: 0;
     padding-left: 15%;
     padding-right: 15%;
-    background: black;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(25px);
+    box-shadow: rgb(0 0 0 / 50%) 0px -5px 20px 3px;
     width: 100%;
+    border-top: solid 0.2px rgb(30, 30, 30);
+}
+
+a {
+    opacity: 1;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+a:hover {
+    opacity: 0.7;
+    transition: all 0.3s ease 0s;
+}
+
+a:active {
+    transform: translateY(3px);
+}
+
+nav a {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    border-top: solid 0.2px rgb(30, 30, 30);
     flex-wrap: nowrap;
+}
+
+nav a svg g rect {
+    cursor: pointer;
+}
+
+nav a svg g path {
+    cursor: pointer;
 }
 
 header {
@@ -81,8 +109,6 @@ header {
     padding-left: 15%; 
     padding-right: 15%;
     padding-bottom: 3%;
-    display: flex;
-    flex-direction: row;
 }
 
 svg.makeloop-logo {
@@ -92,6 +118,7 @@ svg.makeloop-logo {
 }
 
 svg.makeloop-logo rect.cls-1 {
+    stroke: transparent;
     fill: transparent;
 }
 
@@ -115,10 +142,6 @@ svg.makeloop-logo rect.cls-1 {
         padding-top: 10%;
         padding-left: 7%;
         padding-right: 7%;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
     }
 
     svg.makeloop-logo {
